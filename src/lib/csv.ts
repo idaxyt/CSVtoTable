@@ -6,7 +6,7 @@ const csvrs = [
 ]
 
 const text = fs.readFileSync('data/test.csv',{encoding: 'utf-8'}).replace(/\r\n/g,'\n')
-var rows: any[] | Array<Array<number>> = text.split('\n')
+var rows: any[] | Array<string> = text.split('\n')
 for(let i = 0; i < rows.length; i++) {
     rows[i] = rows[i].split(',')
 }
