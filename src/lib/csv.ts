@@ -15,16 +15,16 @@ for(let i = 0; i < rows.length; i++) {
 /**
  * -----------
  * |1|2|3|4|5|
- * |1|2|3|4|5|
+ * |11|12|13|14|15|
  * |A|B|C|D|E|
  * -----------
  */
 
  // >>> 生成并得到行分割
- let row = "".padStart(rows[0].length*2+1,'-') // 头部补充
- var rs = [row]
+ let row: string = "".padStart(rows[0].length*2+1,'-') // 头部补充
+ var rs: Array<string> = [row]
  for(let i = 0; i < rows.length; i++) {
-     rs.push('|'+rows[i].join('|')+'|') // 拼接数字与'|'字符
+     rs.push(`|${rows[i].join('|')}|`) // 模版字符串，定义多行文本和内嵌表达式
  }
  rs.push(row) // 生成数组
  let result = rs.join('\r\n') // 数组拼接换行符得到上诉输出结果
