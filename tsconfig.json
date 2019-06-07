@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2018",
+        "sourceMap": true, // ts编译成js时生成map文件，有此文件则可以在ts文件中打断点
+        "outDir": "dist",
+        "declaration": true,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "preserveConstEnums": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}

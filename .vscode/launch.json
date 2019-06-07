@@ -1,0 +1,18 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "csvtoexcel",
+            "program": "${workspaceFolder}/dist/lib/csv.js",
+            "cwd": "${workspaceFolder}", //当前工作路径（为整个文件），即声明程序运行的当前目录，为其他文件使用路径时必要配置
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ]
+        }
+    ]
+}
