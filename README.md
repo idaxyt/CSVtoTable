@@ -15,7 +15,7 @@ A,B,C,D,E
 ```
 
 细节：
-· 读取csv文件需安装node，yarn add @types/node
-·· 运行ts编译的js文件
-· 直接node xx.js
-·· 配置vsc编辑器自带的nodejs的launch.json文件，修改program为文件执行路径
+# 读取csv文件需安装node，yarn add @types/node
+## 运行ts编译的js文件
+# 直接node xx.js
+## 配置vsc编辑器自带的nodejs的launch.json文件，修改program为文件执行路径
